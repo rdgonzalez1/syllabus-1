@@ -1,4 +1,4 @@
-# Tarea X: Nombre de la tarea :school_satchel:
+# Tarea 0: DCConecta2: school_satchel:
 
 
 Un buen ```README.md``` puede marcar una gran diferencia en la facilidad con la que corregimos una tarea, y consecuentemente cómo funciona su programa, por lo en general, entre más ordenado y limpio sea éste, mejor será 
@@ -27,19 +27,15 @@ en cierta línea del código o comentar una función>
 * <Nombre item pauta<sub>n</sub>>: Me faltó hacer <insertar qué cosa faltó>
 
 ## Ejecución :computer:
-El módulo principal de la tarea a ejecutar es  ```archivo.py```. Además se debe crear los siguientes archivos y directorios adicionales:
-1. ```archivo.ext``` en ```ubicación```
-2. ```directorio``` en ```ubicación```
-3. ...
-
+El módulo principal de la tarea a ejecutar es  ```menu_inicio.py```.
 
 ## Librerías :books:
 ### Librerías externas utilizadas
 La lista de librerías externas que utilicé fue la siguiente:
 
-1. ```librería_1```: ```función() / módulo```
-2. ```librería_2```: ```función() / módulo``` (debe instalarse)
-3. ...
+1. ```datetime```: ```datetime.now() / menu_chats.py```
+2. ```datetime```: ```datetime.now() / menu_grupos.py``` 
+
 
 ### Librerías propias
 Por otro lado, los módulos que fueron creados fueron los siguientes:
@@ -90,8 +86,7 @@ Lo importante es que expliquen qué hace la función y que si saben que alguna p
 ## Referencias de código externo :book:
 
 Para realizar mi tarea saqué código de:
-1. \<link de código>: este hace \<lo que hace> y está implementado en el archivo <nombre.py> en las líneas <número de líneas> y hace <explicación breve de que hace>
-
+1. \<https://micro.recursospython.com/recursos/como-obtener-la-fecha-y-hora-actual.html>: este hace \<genera la fecha y hora exacta cuando se instancia> y está implementado en el archivo <menu_chats.py> y en <menu_grupos.py> en las líneas <47, 48 y 53> y en las lineas <33, 34, 40 y 41> Lo utilizo para poder guardar la hora en una variable del momento en que se ingrese el imput del mensaj en el chat. En el caso de los grupos tambien la utilizo para saber la hora en la que se abandona el chat si ese es el caso.
 
 
 ## Descuentos
