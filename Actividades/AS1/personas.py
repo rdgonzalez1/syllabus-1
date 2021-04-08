@@ -3,23 +3,26 @@ import random
 
 
 # Completar
-class Persona:
+class Persona(ABC):
 
-    def __init__(self, nombre, edad, contagiado):
+    def __init__(self, nombre="", edad=0, contagiado=0):
         # No modificar
         self.nombre = nombre
         self.edad = edad
         self.contagiado = contagiado
 
+    @abstractmethod
     def saludar(self):
         pass
 
-
 # Completar
-class Cliente:
+class Cliente(Persona):
 
-    def __init__(self, nombre, edad, contagiado, nombre_local_favorito, dinero):
+    def __init__(self,nombre_local_favorito = "", dinero = 0 , **kwargs):
         # Completar
+        super().__init__(**kwargs)
+        self.nombre_local_favorito = nombre_local_favorito
+        self.dinero = dinero
         pass
 
     def saludar(self):
@@ -28,10 +31,14 @@ class Cliente:
 
 
 # Completar
-class Trabajador:
+class Trabajador(Persona):
 
-    def __init__(self, nombre, edad, contagiado, sueldo, nombre_local):
+    def __init__(self, sueldo = 0, nombre_local = "", **kwargs):
         # Completar
+        super().__init__(**kwargs)
+        self.sueldo = sueldo
+        self.nombre_local = nombre_local
+        ##llamar metodo saludar???
         pass
 
     def generar_posible_contagio(self):
